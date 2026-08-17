@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 300" role="img" aria-labelledby="title desc">
+  <title id="title">Lord Bartolome — Software Engineering / Product Engineering</title>
+  <desc id="desc">Editorial technical profile banner for Lord Bartolome, based in Manila, Philippines.</desc>
+  <defs>
+    <pattern id="diagonal" width="18" height="18" patternUnits="userSpaceOnUse" patternTransform="rotate(28)">
+      <line x1="0" y1="0" x2="0" y2="18" stroke="#e9e4da" stroke-opacity="0.05" stroke-width="1" />
+    </pattern>
+    <pattern id="grid" width="72" height="72" patternUnits="userSpaceOnUse">
+      <path d="M72 0H0V72" fill="none" stroke="#e9e4da" stroke-opacity="0.08" stroke-width="1" />
+    </pattern>
+  </defs>
+
+  <rect width="1200" height="300" fill="#252525" />
+  <rect width="1200" height="300" fill="url(#grid)" />
+  <rect width="1200" height="300" fill="url(#diagonal)" />
+
+  <g fill="none" stroke="#e9e4da" stroke-opacity="0.55" stroke-width="1">
+    <path d="M28 40V28H40M1160 28H1172V40M28 260V272H40M1160 272H1172V260" />
+    <path d="M28 226H1172" stroke-opacity="0.18" />
+    <path d="M905 28V272" stroke-opacity="0.18" />
+  </g>
+
+  <g fill="#d27d62" font-family="Arial, Helvetica, sans-serif" font-size="11" letter-spacing="2.4">
+    <text x="58" y="61">PROFILE / 01</text>
+    <text x="1142" y="61" text-anchor="end">MANILA, PH</text>
+  </g>
+
+  <g fill="#f2eee6" font-family="Georgia, 'Times New Roman', serif">
+    <text x="58" y="145" font-size="58" letter-spacing="1.5">LORD BARTOLOME</text>
+  </g>
+
+  <g fill="#e9e4da" font-family="Arial, Helvetica, sans-serif" font-size="13" letter-spacing="2.2">
+    <text x="61" y="178">SOFTWARE ENGINEERING  /  PRODUCT ENGINEERING</text>
+    <text x="61" y="202" fill="#d27d62">WEB  ·  DESKTOP  ·  LOCAL-FIRST</text>
+  </g>
+
+  <g fill="#e9e4da" font-family="Arial, Helvetica, sans-serif">
+    <text x="1142" y="158" text-anchor="end" font-size="12" letter-spacing="2">ENGINEERING PROFILE</text>
+    <text x="1142" y="184" text-anchor="end" font-size="34" letter-spacing="1">2026</text>
+    <text x="1142" y="207" text-anchor="end" font-size="10" letter-spacing="2.3" fill="#d27d62">STRUCTURE / FEEL / SHIP</text>
+  </g>
+
+  <g fill="#e9e4da" font-family="Arial, Helvetica, sans-serif" font-size="10" letter-spacing="1.8" opacity="0.62">
+    <text x="58" y="258">SYSTEMS, INTERFACES, AND PRODUCTS WITH LONG-TERM CLARITY</text>
+    <text x="1142" y="258" text-anchor="end">LB—26</text>
+  </g>
+</svg>

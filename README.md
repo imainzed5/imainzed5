@@ -1,3 +1,5 @@
+![Lord Bartolome profile banner](./readme-banner.svg)
+
 # Lord Bartolome
 
 **Software Engineer · Product-Focused Developer**
