@@ -157,4 +157,4 @@ I'm currently open to Software Engineering and Product Engineering internship op
   <a href="https://llbartolome-portfolio.vercel.app/work.html"><strong>WORK ARCHIVE ↗</strong></a>
 </p>
 
-![Profile endcap](./assets/profile/footer.svg)
+![Profile endcap](./assets/profile/footer-wave.svg)
