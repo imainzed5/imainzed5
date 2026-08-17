@@ -1,47 +1,28 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 300" role="img" aria-labelledby="title desc">
-  <title id="title">Lord Bartolome — Software Engineering / Product Engineering</title>
-  <desc id="desc">Editorial technical profile banner for Lord Bartolome, based in Manila, Philippines.</desc>
-  <defs>
-    <pattern id="diagonal" width="18" height="18" patternUnits="userSpaceOnUse" patternTransform="rotate(28)">
-      <line x1="0" y1="0" x2="0" y2="18" stroke="#e9e4da" stroke-opacity="0.05" stroke-width="1" />
-    </pattern>
-    <pattern id="grid" width="72" height="72" patternUnits="userSpaceOnUse">
-      <path d="M72 0H0V72" fill="none" stroke="#e9e4da" stroke-opacity="0.08" stroke-width="1" />
-    </pattern>
-  </defs>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="300" viewBox="0 0 1200 300" role="img" aria-labelledby="title desc">
+  <title id="title">Lord Bartolome — Software Engineer and Product-Focused Developer</title>
+  <desc id="desc">A dark teal and graphite profile banner with a centered name and tagline.</desc>
 
-  <rect width="1200" height="300" fill="#252525" />
-  <rect width="1200" height="300" fill="url(#grid)" />
-  <rect width="1200" height="300" fill="url(#diagonal)" />
+  <rect width="1200" height="300" fill="#0c151b"/>
+  <rect x="40" y="30" width="1120" height="240" fill="#102630" opacity="0.72"/>
 
-  <g fill="none" stroke="#e9e4da" stroke-opacity="0.55" stroke-width="1">
-    <path d="M28 40V28H40M1160 28H1172V40M28 260V272H40M1160 272H1172V260" />
-    <path d="M28 226H1172" stroke-opacity="0.18" />
-    <path d="M905 28V272" stroke-opacity="0.18" />
+  <g fill="none" stroke="#b9d5da" stroke-width="1" opacity="0.08">
+    <path d="M40 30h1120M40 270h1120M40 30v240M1160 30v240"/>
+    <path d="M200 30v240M1000 30v240M40 90h1120M40 210h1120"/>
   </g>
 
-  <g fill="#d27d62" font-family="Arial, Helvetica, sans-serif" font-size="11" letter-spacing="2.4">
-    <text x="58" y="61">PROFILE / 01</text>
-    <text x="1142" y="61" text-anchor="end">MANILA, PH</text>
+  <path d="M0 183C168 158 284 215 466 194c176-20 266-42 409-13 132 27 209 38 325 19v100H0Z" fill="#173945"/>
+  <path d="M0 213c173-35 279 12 448 2 183-11 285-37 452-9 111 18 199 18 300 2v92H0Z" fill="#0b2029" opacity="0.92"/>
+  <path d="M0 184c168-26 284 31 466 10 176-20 266-42 409-13 132 27 209 38 325 19" fill="none" stroke="#2e6875" stroke-width="1" opacity="0.7"/>
+
+  <g fill="none" stroke="#4da6b7" stroke-width="2" opacity="0.75">
+    <path d="M70 70h28M70 70v28"/>
+    <path d="M1130 230h-28M1130 230v-28"/>
   </g>
 
-  <g fill="#f2eee6" font-family="Georgia, 'Times New Roman', serif">
-    <text x="58" y="145" font-size="58" letter-spacing="1.5">LORD BARTOLOME</text>
-  </g>
-
-  <g fill="#e9e4da" font-family="Arial, Helvetica, sans-serif" font-size="13" letter-spacing="2.2">
-    <text x="61" y="178">SOFTWARE ENGINEERING  /  PRODUCT ENGINEERING</text>
-    <text x="61" y="202" fill="#d27d62">WEB  ·  DESKTOP  ·  LOCAL-FIRST</text>
-  </g>
-
-  <g fill="#e9e4da" font-family="Arial, Helvetica, sans-serif">
-    <text x="1142" y="158" text-anchor="end" font-size="12" letter-spacing="2">ENGINEERING PROFILE</text>
-    <text x="1142" y="184" text-anchor="end" font-size="34" letter-spacing="1">2026</text>
-    <text x="1142" y="207" text-anchor="end" font-size="10" letter-spacing="2.3" fill="#d27d62">STRUCTURE / FEEL / SHIP</text>
-  </g>
-
-  <g fill="#e9e4da" font-family="Arial, Helvetica, sans-serif" font-size="10" letter-spacing="1.8" opacity="0.62">
-    <text x="58" y="258">SYSTEMS, INTERFACES, AND PRODUCTS WITH LONG-TERM CLARITY</text>
-    <text x="1142" y="258" text-anchor="end">LB—26</text>
+  <g font-family="Arial, Helvetica, sans-serif" text-anchor="middle">
+    <text x="600" y="131" fill="#f2f1eb" font-size="54" font-weight="700" letter-spacing="2.4">LORD BARTOLOME</text>
+    <text x="600" y="170" fill="#e5eceb" font-size="17" font-weight="600" letter-spacing="2.7">SOFTWARE ENGINEER · PRODUCT-FOCUSED DEVELOPER</text>
+    <rect x="540" y="192" width="120" height="2" fill="#4da6b7"/>
+    <text x="600" y="224" fill="#b7c8ca" font-size="12" font-weight="600" letter-spacing="3.2">WEB  ·  DESKTOP  ·  LOCAL-FIRST</text>
   </g>
 </svg>

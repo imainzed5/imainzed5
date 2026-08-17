@@ -1,7 +1,5 @@
 ![Lord Bartolome profile banner](./readme-banner.svg)
 
-# Software Engineer · Product-Focused Developer
-
 I build thoughtful web and desktop products with clean interfaces, practical architecture, and end-to-end product implementation.
 
 <p>
