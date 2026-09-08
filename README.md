@@ -1,4 +1,4 @@
-![Lord Bartolome profile banner](./readme-banner.svg)
+![Profile banner](./readme-banner.svg)
 
 <p align="center">
   <strong>BS INFORMATION TECHNOLOGY STUDENT · PHILIPPINES</strong><br>
@@ -103,21 +103,31 @@ I build thoughtful web and desktop products with clean interfaces, practical arc
 
 ## 📁 Selected Work
 
+Product work across finance, local-first desktop software, client delivery, and collaborative workflows.
+
 ### Moneda — Personal Finance Product 🔒
 
-Offline-capable finance application for tracking transactions, transfers, budgets, savings, and debts with domain-aware money movement.
+An offline-capable finance product for tracking transactions, transfers, budgets, savings, and debts with domain-aware money movement.
 
 `Next.js` `TypeScript` `Supabase` `PostgreSQL` `IndexedDB`
 
-Private source · [Case Study ↗](https://llbartolome-portfolio.vercel.app/projects/moneda.html)
+Private source · [Read the case study ↗](https://llbartolome-portfolio.vercel.app/projects/moneda.html)
 
 ### MemoryLane — Local-First Desktop Timeline
 
-A Tauri/Rust desktop application for capturing and browsing a private, locally stored visual activity timeline.
+A Tauri/Rust desktop application for capturing and browsing a private visual activity timeline stored locally on the device.
 
 `Tauri` `Rust` `React` `SQLite`
 
-Private product · [Repository ↗](https://github.com/imainzed5/memorylane) · [Case Study ↗](https://llbartolome-portfolio.vercel.app/projects/memorylane.html)
+Private product · [View the repository ↗](https://github.com/imainzed5/memorylane) · [Read the case study ↗](https://llbartolome-portfolio.vercel.app/projects/memorylane.html)
+
+### Sahagun Dental Care — Client Website
+
+A production website for a local dental clinic in Caloocan, designed around clear service discovery, trust, and straightforward inquiries.
+
+`HTML` `CSS` `JavaScript`
+
+Client project · [View the repository ↗](https://github.com/imainzed5/sahagun-dental-care) · [Read the case study ↗](https://llbartolome-portfolio.vercel.app/projects/sahagun-dental-care.html)
 
 ### Vince — Collaborative Project Workspace
 
@@ -125,15 +135,7 @@ A collaborative workspace concept for project tracking, Kanban workflows, notes,
 
 `React` `TypeScript` `Supabase` `Zustand` `dnd-kit`
 
-Concept · [Repository ↗](https://github.com/imainzed5/Vince) · [Browse Work ↗](https://llbartolome-portfolio.vercel.app/work.html)
-
-### Sahagun Dental Care — Client Website
-
-A production website for a local dental clinic in Caloocan, focused on clear service discovery, trust, and straightforward inquiries.
-
-`HTML` `CSS` `JavaScript`
-
-Client project · [Repository ↗](https://github.com/imainzed5/sahagun-dental-care) · [Case Study ↗](https://llbartolome-portfolio.vercel.app/projects/sahagun-dental-care.html)
+Concept · [View the repository ↗](https://github.com/imainzed5/Vince) · [Browse the work archive ↗](https://llbartolome-portfolio.vercel.app/work.html)
 
 > Some larger product repositories are intentionally private. The portfolio contains the broader product and case-study view.
 

@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="300" viewBox="0 0 1200 300" role="img" aria-labelledby="title desc">
-  <title id="title">Lord Bartolome — Software Engineer and Product-Focused Developer</title>
-  <desc id="desc">A dark teal and graphite profile banner with a centered name and tagline.</desc>
+  <title id="title">Software Engineer and Product-Focused Developer</title>
+  <desc id="desc">A dark teal and graphite profile banner with a centered tagline.</desc>
 
   <rect width="1200" height="300" fill="#0c151b"/>
   <rect x="40" y="30" width="1120" height="240" fill="#102630" opacity="0.72"/>
@@ -20,9 +20,8 @@
   </g>
 
   <g font-family="Arial, Helvetica, sans-serif" text-anchor="middle">
-    <text x="600" y="131" fill="#f2f1eb" font-size="54" font-weight="700" letter-spacing="2.4">LORD BARTOLOME</text>
-    <text x="600" y="170" fill="#e5eceb" font-size="17" font-weight="600" letter-spacing="2.7">SOFTWARE ENGINEER · PRODUCT-FOCUSED DEVELOPER</text>
-    <rect x="540" y="192" width="120" height="2" fill="#4da6b7"/>
-    <text x="600" y="224" fill="#b7c8ca" font-size="12" font-weight="600" letter-spacing="3.2">WEB  ·  DESKTOP  ·  LOCAL-FIRST</text>
+    <text x="600" y="145" fill="#e5eceb" font-size="17" font-weight="600" letter-spacing="2.7">SOFTWARE ENGINEER · PRODUCT-FOCUSED DEVELOPER</text>
+    <rect x="540" y="167" width="120" height="2" fill="#4da6b7"/>
+    <text x="600" y="200" fill="#b7c8ca" font-size="12" font-weight="600" letter-spacing="3.2">WEB  ·  DESKTOP  ·  LOCAL-FIRST</text>
   </g>
 </svg>
