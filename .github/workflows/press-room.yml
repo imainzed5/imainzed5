@@ -1,0 +1,61 @@
+name: Redraw the Press Room
+
+on:
+  schedule:
+    # Manila is UTC+8 with no daylight saving. Each run lands just after a change
+    # of light in the window: dawn 05:07, day 07:07 and 12:07, dusk 17:07,
+    # night 19:37 and 23:07. GitHub can start scheduled runs late; the sky is
+    # worked out from the time the run actually happens.
+    - cron: '7 21 * * *'
+    - cron: '7 23 * * *'
+    - cron: '7 4 * * *'
+    - cron: '7 9 * * *'
+    - cron: '37 11 * * *'
+    - cron: '7 15 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: press-room
+  cancel-in-progress: false
+
+jobs:
+  redraw:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: press-room
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-node@v7
+        with:
+          node-version: '22'
+          package-manager-cache: false
+
+      - name: Install the font subsetter
+        run: npm ci
+
+      - name: Fetch GitHub activity
+        run: node fetch-data.mjs
+        env:
+          # PRESS_ROOM_TOKEN can read the private feature repos; without it those desks stay unlit.
+          GITHUB_TOKEN: ${{ secrets.PRESS_ROOM_TOKEN || github.token }}
+          GITHUB_USERNAME: imainzed5
+
+      - name: Draw the room and the cards
+        run: node render.mjs
+
+      - name: Commit the new edition
+        run: |
+          git add -- ../assets/press-room ../README.md
+          if git diff --cached --quiet; then
+            echo "Nothing new to print."
+            exit 0
+          fi
+
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit -m "Redraw the Press Room"
+          git push

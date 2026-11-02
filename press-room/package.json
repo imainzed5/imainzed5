@@ -1,0 +1,12 @@
+{
+  "name": "profile-press-room",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "fetch": "node fetch-data.mjs",
+    "render": "node render.mjs"
+  },
+  "devDependencies": {
+    "subset-font": "^2.9.0"
+  }
+}

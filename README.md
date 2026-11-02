@@ -1,162 +1,31 @@
-![Profile banner](./readme-banner.svg)
-
+<!-- The block between the press-room markers is redrawn by .github/workflows/press-room.yml. Edit everything else freely. -->
+<!-- press-room:start -->
 <p align="center">
-  <strong>BS INFORMATION TECHNOLOGY STUDENT · PHILIPPINES</strong><br>
-  Product-focused web and desktop applications · local-first software
+  <picture><source media="(prefers-color-scheme: dark)" srcset="./assets/press-room/press-room-dark.svg"><img alt="The Press Room: an isometric office redrawn from my GitHub activity" src="./assets/press-room/press-room-light.svg" width="100%"></picture>
 </p>
 
 <p align="center">
-  <a href="https://llbartolome-portfolio.vercel.app/"><strong>01 / PORTFOLIO ↗</strong></a>
-  &nbsp;&nbsp;·&nbsp;&nbsp;
-  <a href="https://llbartolome-portfolio.vercel.app/work.html"><strong>02 / WORK INDEX ↗</strong></a>
+  <a href="https://llbartolome-portfolio.vercel.app/work?read=moneda"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/press-room/card-moneda-dark.svg"><img alt="Moneda, read on p.04" src="./assets/press-room/card-moneda-light.svg" width="49%"></picture></a>
+  <a href="https://llbartolome-portfolio.vercel.app/work?read=realm-breaker"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/press-room/card-realm-breaker-dark.svg"><img alt="Realm Breaker, read on p.20" src="./assets/press-room/card-realm-breaker-light.svg" width="49%"></picture></a><br>
+  <a href="https://llbartolome-portfolio.vercel.app/work?read=aqualogic"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/press-room/card-aqualogic-dark.svg"><img alt="AquaLogic, read on p.10" src="./assets/press-room/card-aqualogic-light.svg" width="49%"></picture></a>
+  <a href="https://llbartolome-portfolio.vercel.app/work?read=whisk"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/press-room/card-whisk-dark.svg"><img alt="Whisk, read on p.10" src="./assets/press-room/card-whisk-light.svg" width="49%"></picture></a><br>
+  <a href="https://llbartolome-portfolio.vercel.app/work?read=memorylane"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/press-room/card-memorylane-dark.svg"><img alt="MemoryLane, read on p.10" src="./assets/press-room/card-memorylane-light.svg" width="49%"></picture></a>
+  <a href="https://llbartolome-portfolio.vercel.app/"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/press-room/card-issue-dark.svg"><img alt="Issue 01, read on p.01" src="./assets/press-room/card-issue-light.svg" width="49%"></picture></a><br>
 </p>
+<!-- press-room:end -->
 
----
+## 01 — Currently
 
-## 🧑‍💻 About Me
+- Software Development Intern at Alpha Premier Realty since October 2026.
+- Fourth-year BS Information Technology student, graduating in 2027.
+- Building product-minded software across web, desktop, and local-first workflows.
 
-I build thoughtful web and desktop products with clean interfaces, practical architecture, and end-to-end implementation. I care about the engineering details that make software feel coherent—from domain rules and state boundaries to offline behavior and interaction quality.
+## 02 — Core Stack
 
-- Open to **Software Engineering, Frontend, Full-Stack, and Product Engineering internships**
-- Interested in local-first software, offline-capable apps, and polished product experiences
+`React` `TypeScript` `Next.js` `Node.js` `Supabase` `PostgreSQL` `SQLite` `Tauri` `Rust` `C++20` `OpenGL`
 
----
+## 03 — Write In
 
-## 🧭 What I Build
+[Portfolio ↗](https://llbartolome-portfolio.vercel.app) · [LinkedIn ↗](https://www.linkedin.com/in/lord-bartolome-49153242b/) · [Email ↗](mailto:bartolomell0705@gmail.com)
 
-<table>
-  <thead>
-    <tr>
-      <th>#</th>
-      <th>Focus</th>
-      <th>The short version</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><code>01</code></td>
-      <td><strong>Product Engineering</strong></td>
-      <td>From workflow and domain rules to production-facing product implementation.</td>
-    </tr>
-    <tr>
-      <td><code>02</code></td>
-      <td><strong>Frontend Systems</strong></td>
-      <td>Clean interfaces, clear state boundaries, and interactions that feel deliberate.</td>
-    </tr>
-    <tr>
-      <td><code>03</code></td>
-      <td><strong>Local-First Desktop</strong></td>
-      <td>Offline-capable tools with local persistence and privacy-first product direction.</td>
-    </tr>
-    <tr>
-      <td><code>04</code></td>
-      <td><strong>Data-Aware Products</strong></td>
-      <td>Explicit modeling for money movement, budgets, accounts, and other domain logic.</td>
-    </tr>
-  </tbody>
-</table>
-
----
-
-## 🧰 Tech Stack
-
-**Core**
-
-<table>
-  <tr>
-    <td align="center"><img src="./assets/stack/typescript.svg" width="36" height="36" alt="TypeScript icon"><br><sub><code>TypeScript</code></sub></td>
-    <td align="center"><img src="./assets/stack/react.svg" width="36" height="36" alt="React icon"><br><sub><code>React</code></sub></td>
-    <td align="center"><img src="./assets/stack/nextjs.svg" width="36" height="36" alt="Next.js icon"><br><sub><code>Next.js</code></sub></td>
-    <td align="center"><img src="./assets/stack/nodejs.svg" width="36" height="36" alt="Node.js icon"><br><sub><code>Node.js</code></sub></td>
-    <td align="center"><img src="./assets/stack/postgresql.svg" width="36" height="36" alt="PostgreSQL icon"><br><sub><code>PostgreSQL</code></sub></td>
-    <td align="center"><img src="./assets/stack/supabase.svg" width="36" height="36" alt="Supabase icon"><br><sub><code>Supabase</code></sub></td>
-  </tr>
-</table>
-
-**Product / Data / Tooling**
-
-<table>
-  <tr>
-    <td align="center"><img src="./assets/stack/sqlite.svg" width="36" height="36" alt="SQLite icon"><br><sub><code>SQLite</code></sub></td>
-    <td align="center"><code>IndexedDB</code></td>
-    <td align="center"><code>Zustand</code></td>
-    <td align="center"><img src="./assets/stack/tanstack.svg" width="36" height="36" alt="TanStack icon"><br><sub><code>TanStack Query</code></sub></td>
-    <td align="center"><img src="./assets/stack/git.svg" width="36" height="36" alt="Git icon"><br><sub><code>Git</code></sub></td>
-    <td align="center"><img src="./assets/stack/github.svg" width="36" height="36" alt="GitHub icon"><br><sub><code>GitHub</code></sub></td>
-    <td align="center"><img src="./assets/stack/vercel.svg" width="36" height="36" alt="Vercel icon"><br><sub><code>Vercel</code></sub></td>
-  </tr>
-</table>
-
-**Beyond Core**
-
-<table>
-  <tr>
-    <td align="center"><img src="./assets/stack/rust.svg" width="36" height="36" alt="Rust icon"><br><sub><code>Rust</code></sub></td>
-    <td align="center"><img src="./assets/stack/tauri.svg" width="36" height="36" alt="Tauri icon"><br><sub><code>Tauri</code></sub></td>
-    <td align="center"><img src="./assets/stack/flutter.svg" width="36" height="36" alt="Flutter icon"><br><sub><code>Flutter</code></sub></td>
-    <td align="center"><img src="./assets/stack/cplusplus.svg" width="36" height="36" alt="C++ icon"><br><sub><code>C++</code></sub></td>
-    <td align="center"><img src="./assets/stack/opengl.svg" width="36" height="36" alt="OpenGL icon"><br><sub><code>OpenGL</code></sub></td>
-  </tr>
-</table>
-
----
-
-## 📁 Selected Work
-
-Product work across finance, local-first desktop software, client delivery, and collaborative workflows.
-
-### Moneda — Personal Finance Product 🔒
-
-An offline-capable finance product for tracking transactions, transfers, budgets, savings, and debts with domain-aware money movement.
-
-`Next.js` `TypeScript` `Supabase` `PostgreSQL` `IndexedDB`
-
-Private source · [Read the case study ↗](https://llbartolome-portfolio.vercel.app/projects/moneda.html)
-
-### MemoryLane — Local-First Desktop Timeline
-
-A Tauri/Rust desktop application for capturing and browsing a private visual activity timeline stored locally on the device.
-
-`Tauri` `Rust` `React` `SQLite`
-
-Private product · [View the repository ↗](https://github.com/imainzed5/memorylane) · [Read the case study ↗](https://llbartolome-portfolio.vercel.app/projects/memorylane.html)
-
-### Sahagun Dental Care — Client Website
-
-A production website for a local dental clinic in Caloocan, designed around clear service discovery, trust, and straightforward inquiries.
-
-`HTML` `CSS` `JavaScript`
-
-Client project · [View the repository ↗](https://github.com/imainzed5/sahagun-dental-care) · [Read the case study ↗](https://llbartolome-portfolio.vercel.app/projects/sahagun-dental-care.html)
-
-### Vince — Collaborative Project Workspace
-
-A collaborative workspace concept for project tracking, Kanban workflows, notes, team communication, milestones, and real-time interactions.
-
-`React` `TypeScript` `Supabase` `Zustand` `dnd-kit`
-
-Concept · [View the repository ↗](https://github.com/imainzed5/Vince) · [Browse the work archive ↗](https://llbartolome-portfolio.vercel.app/work.html)
-
-> Some larger product repositories are intentionally private. The portfolio contains the broader product and case-study view.
-
----
-
-## 🔧 How I Build
-
-**Understand the workflow → define behavior and data → design the interface → implement → refine.**
-
-I care about coherent domain rules, offline behavior, state boundaries, interaction details, and choosing the simplest architecture appropriate to the problem.
-
----
-
-## 🤝 Let's Build
-
-I'm currently open to Software Engineering and Product Engineering internship opportunities.
-
-<p align="center">
-  <a href="https://llbartolome-portfolio.vercel.app/"><strong>PORTFOLIO ↗</strong></a>
-  &nbsp;&nbsp;·&nbsp;&nbsp;
-  <a href="https://llbartolome-portfolio.vercel.app/work.html"><strong>WORK ARCHIVE ↗</strong></a>
-</p>
-
-![Profile endcap](./assets/profile/footer-wave.svg)
+<p align="center"><sub>Structure first. Feel second. Polish all the way through launch.</sub></p>
