@@ -668,8 +668,7 @@ function header(T) {
   const stamp = stampDate + ' · ' + stampTime + ' MNL';
   let s = '';
   // running head
-  s += '<text class="rh-name" x="40" y="44">Bartolome</text>';
-  s += '<text class="rh" x="132" y="43">· ISSUE 01 · GITHUB EDITION</text>';
+  s += '<text class="rh" x="40" y="43">ISSUE 01 · GITHUB EDITION</text>';
   s += '<text class="rh" x="960" y="43" text-anchor="end">' + esc(stamp) + '</text>';
   s += '<circle class="live" cx="' + f1(960 - stamp.length * 8 - 10) + '" cy="39.5" r="3.5"/>';
   s += '<line class="rule" x1="40" y1="56" x2="960" y2="56"/>';
