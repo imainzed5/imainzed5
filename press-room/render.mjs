@@ -794,6 +794,74 @@ async function card(c, edition) {
 }
 
 /* ------------------------------------------------------------------ */
+/* Back matter: the masthead and the write-in buttons                  */
+/* Edit the words here; the README block below is redrawn from them.   */
+/* ------------------------------------------------------------------ */
+
+const MASTHEAD = [
+  { k: 'NOW', head: 'Software Development', tail: 'Intern.', dek: 'Alpha Premier Realty · since October 2026' },
+  { k: 'STUDYING', head: 'BS Information', tail: 'Technology.', dek: 'Fourth year · graduating in 2027' },
+  { k: 'BUILDING', head: 'Product-minded', tail: 'software.', dek: 'Web, desktop and local-first workflows' },
+];
+const STACK = ['React', 'TypeScript', 'Next.js', 'Node.js', 'Supabase', 'PostgreSQL', 'SQLite', 'Tauri', 'Rust', 'C++20', 'OpenGL'];
+const MOTTO = 'Structure first. Feel second. Polish all the way through launch.';
+const WIRE = [
+  { slug: 'portfolio', k: 'THE ISSUE', title: 'Portfolio', dek: 'llbartolome-portfolio.vercel.app', href: SITE + '/' },
+  { slug: 'linkedin', k: 'THE WIRE', title: 'LinkedIn', dek: 'in/lord-bartolome', href: 'https://www.linkedin.com/in/lord-bartolome-49153242b/' },
+  { slug: 'email', k: 'LETTERS', title: 'Email', dek: 'bartolomell0705@gmail.com', href: 'mailto:bartolomell0705@gmail.com' },
+];
+
+const MW = 1000, MH = 352;
+
+async function masthead(edition) {
+  const T = EDITIONS[edition];
+  const col = (c, i) => {
+    const x = 40 + i * 312;
+    return '<text class="kicker" x="' + x + '" y="96">' + esc(c.k) + '</text>' +
+      '<text class="title" x="' + (x - 2) + '" y="134" style="font-size:28px;letter-spacing:-.5px">' + esc(c.head) + '</text>' +
+      '<text class="title" x="' + (x - 2) + '" y="166" style="font-size:28px;letter-spacing:-.5px"><tspan class="it">' + esc(c.tail) + '</tspan></text>' +
+      '<text class="dek" x="' + x + '" y="194" style="font-size:13px">' + esc(c.dek) + '</text>' +
+      (i ? '<line class="rule--soft" x1="' + (x - 18) + '" y1="80" x2="' + (x - 18) + '" y2="202"/>' : '');
+  };
+  const stack = STACK.map((t, i) => (i ? '<tspan class="it" dx="9">·</tspan><tspan dx="9">' : '<tspan>') + esc(t) + '</tspan>').join('');
+  const svg = '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ' + MW + ' ' + MH + '" width="' + MW + '" height="' + MH + '" role="img" aria-labelledby="mt md">' +
+    '<title id="mt">The masthead: who makes Issue 01</title>' +
+    '<desc id="md">' + esc(MASTHEAD.map((c) => c.k + ': ' + c.head + ' ' + c.tail + ' ' + c.dek).join('. ') + '. Set in: ' + STACK.join(', ') + '. ' + MOTTO) + '</desc>' +
+    defs(T) +
+    '<rect class="bg" width="' + MW + '" height="' + MH + '"/>' +
+    '<g class="grain"><rect width="' + MW + '" height="' + MH + '" fill="url(#grain)"/></g>' +
+    cropMarks(MW, MH, 16, 14) +
+    '<text class="rh" x="40" y="43">THE MASTHEAD · WHO MAKES ISSUE 01</text>' +
+    '<text class="rh" x="960" y="43" text-anchor="end">MANILA · UTC+8</text>' +
+    '<line class="rule" x1="40" y1="56" x2="960" y2="56"/>' +
+    MASTHEAD.map(col).join('') +
+    '<line class="rule" x1="40" y1="224" x2="960" y2="224"/><line class="rule" x1="40" y1="228" x2="960" y2="228"/>' +
+    '<text class="kicker" x="40" y="262">SET IN</text>' +
+    '<text class="dek" x="118" y="262" style="font-size:14px;fill:' + T.ink + '">' + stack + '</text>' +
+    '<line class="rule--soft" x1="40" y1="284" x2="960" y2="284"/>' +
+    '<text class="title" x="500" y="320" text-anchor="middle" style="font-size:19px;letter-spacing:0;font-style:italic;fill:' + T.inkSoft + '">' + esc(MOTTO) + '</text>' +
+    '</svg>';
+  return embedFonts(svg);
+}
+
+async function wireCard(c, edition) {
+  const T = EDITIONS[edition], cw = 320, ch = 96;
+  // an arrow drawn as a path, so it never depends on a glyph the fonts lack
+  const arrow = '<path d="M276 58 L292 42 M280 42 H292 V54" fill="none" stroke="' + T.terra + '" stroke-width="1.6"/>';
+  const svg = '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ' + cw + ' ' + ch + '" width="' + cw + '" height="' + ch + '" role="img" aria-label="' + esc(c.title + ': ' + c.dek) + '">' +
+    defs(T) +
+    '<rect class="bg" width="' + cw + '" height="' + ch + '"/>' +
+    '<g class="grain"><rect width="' + cw + '" height="' + ch + '" fill="url(#grain)"/></g>' +
+    cropMarks(cw, ch, 8, 9) +
+    '<line class="rule" x1="22" y1="20" x2="298" y2="20"/>' +
+    '<text class="kicker" x="22" y="40" style="font-size:9.5px">' + esc(c.k) + '</text>' +
+    '<text class="title" x="20" y="68" style="font-size:26px;letter-spacing:-.4px">' + esc(c.title) + '</text>' +
+    '<text class="small" x="22" y="84" style="font-size:10.5px">' + esc(c.dek) + '</text>' +
+    arrow + '</svg>';
+  return embedFonts(svg);
+}
+
+/* ------------------------------------------------------------------ */
 /* README block + preview                                              */
 /* ------------------------------------------------------------------ */
 
@@ -817,12 +885,27 @@ ${CARDS.map((c, i) => `  <a href="${hrefOf(c)}">${picture('card-' + c.slug, titl
 </p>
 ${MARK[1]}`;
 
+const BACK = ['<!-- back-matter:start -->', '<!-- back-matter:end -->'];
+const backBlock = `${BACK[0]}
+<p align="center">
+  ${picture('masthead', 'The masthead. ' + MASTHEAD.map((c) => c.k[0] + c.k.slice(1).toLowerCase() + ': ' + c.head + ' ' + c.tail + ' ' + c.dek).join('. ') + '. Set in ' + STACK.join(', ') + '. ' + MOTTO, '100%')}
+</p>
+
+<p align="center">
+${WIRE.map((c) => `  <a href="${c.href}">${picture('wire-' + c.slug, c.title + ': ' + c.dek, '32%')}</a>`).join('\n')}
+</p>
+${BACK[1]}`;
+
+function splice(src, mark, text) {
+  const a = src.indexOf(mark[0]), b = src.indexOf(mark[1]);
+  if (a < 0 || b < a) throw new Error('README.md needs the ' + mark.join(' … ') + ' markers');
+  return src.slice(0, a) + text + src.slice(b + mark[1].length);
+}
+
 async function updateReadme() {
   const file = npath.join(repo, 'README.md');
   const src = await fs.readFile(file, 'utf8');
-  const a = src.indexOf(MARK[0]), b = src.indexOf(MARK[1]);
-  if (a < 0 || b < a) throw new Error('README.md needs the ' + MARK.join(' … ') + ' markers');
-  await fs.writeFile(file, src.slice(0, a) + block + src.slice(b + MARK[1].length));
+  await fs.writeFile(file, splice(splice(src, MARK, block), BACK, backBlock));
 }
 
 // A GitHub-like frame round the generated block, for checking both themes locally.
@@ -855,7 +938,7 @@ function preview() {
 </style>
 </head>
 <body>
-<header><b>Profile preview</b><span>The generated block of github.com/${data.login}</span><b class="sp"></b>
+<header><b>Profile preview</b><span>The generated blocks of github.com/${data.login}</span><b class="sp"></b>
   <button type="button" id="gh">GitHub theme: <span id="ghl">dark</span></button></header>
 <div class="wrap">
   <aside><div class="avatar">LB</div><h1>Lord Bartolome</h1><p>${data.login}</p></aside>
@@ -863,7 +946,8 @@ function preview() {
     <div class="path">${data.login} / README.md</div>
     <p class="center">${img('press-room', 'The Press Room', '100%')}</p>
     <p class="center">${cards}</p>
-    <p class="note">The hand-written rest of README.md follows here.</p>
+    <p class="center">${img('masthead', 'The masthead', '100%')}</p>
+    <p class="center">${WIRE.map((c) => `<a href="${c.href}">${img('wire-' + c.slug, c.title, '32%')}</a>`).join(' ')}</p>
   </div></main>
 </div>
 <script>
@@ -893,6 +977,10 @@ for (const ed of Object.keys(EDITIONS)) {
     await fs.writeFile(npath.join(outDir, `card-${c.slug}-${ed}.svg`), cs);
     if (c.slug === 'moneda') sizes.push(`card-${c.slug}-${ed} ${(cs.length / 1024).toFixed(0)}KB`);
   }
+  const ms = await masthead(ed);
+  await fs.writeFile(npath.join(outDir, `masthead-${ed}.svg`), ms);
+  sizes.push(`masthead-${ed} ${(ms.length / 1024).toFixed(0)}KB`);
+  for (const c of WIRE) await fs.writeFile(npath.join(outDir, `wire-${c.slug}-${ed}.svg`), await wireCard(c, ed));
 }
 await updateReadme();
 await fs.writeFile(npath.join(here, 'preview.html'), preview());

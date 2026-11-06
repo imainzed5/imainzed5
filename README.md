@@ -14,18 +14,15 @@
 </p>
 <!-- press-room:end -->
 
-## 01 — Currently
+<!-- The block between the back-matter markers is drawn from MASTHEAD, STACK, MOTTO and WIRE in press-room/render.mjs. -->
+<!-- back-matter:start -->
+<p align="center">
+  <picture><source media="(prefers-color-scheme: dark)" srcset="./assets/press-room/masthead-dark.svg"><img alt="The masthead. Now: Software Development Intern. Alpha Premier Realty · since October 2026. Studying: BS Information Technology. Fourth year · graduating in 2027. Building: Product-minded software. Web, desktop and local-first workflows. Set in React, TypeScript, Next.js, Node.js, Supabase, PostgreSQL, SQLite, Tauri, Rust, C++20, OpenGL. Structure first. Feel second. Polish all the way through launch." src="./assets/press-room/masthead-light.svg" width="100%"></picture>
+</p>
 
-- Software Development Intern at Alpha Premier Realty since October 2026.
-- Fourth-year BS Information Technology student, graduating in 2027.
-- Building product-minded software across web, desktop, and local-first workflows.
-
-## 02 — Core Stack
-
-`React` `TypeScript` `Next.js` `Node.js` `Supabase` `PostgreSQL` `SQLite` `Tauri` `Rust` `C++20` `OpenGL`
-
-## 03 — Write In
-
-[Portfolio ↗](https://llbartolome-portfolio.vercel.app) · [LinkedIn ↗](https://www.linkedin.com/in/lord-bartolome-49153242b/) · [Email ↗](mailto:bartolomell0705@gmail.com)
-
-<p align="center"><sub>Structure first. Feel second. Polish all the way through launch.</sub></p>
+<p align="center">
+  <a href="https://llbartolome-portfolio.vercel.app/"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/press-room/wire-portfolio-dark.svg"><img alt="Portfolio: llbartolome-portfolio.vercel.app" src="./assets/press-room/wire-portfolio-light.svg" width="32%"></picture></a>
+  <a href="https://www.linkedin.com/in/lord-bartolome-49153242b/"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/press-room/wire-linkedin-dark.svg"><img alt="LinkedIn: in/lord-bartolome" src="./assets/press-room/wire-linkedin-light.svg" width="32%"></picture></a>
+  <a href="mailto:bartolomell0705@gmail.com"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/press-room/wire-email-dark.svg"><img alt="Email: bartolomell0705@gmail.com" src="./assets/press-room/wire-email-light.svg" width="32%"></picture></a>
+</p>
+<!-- back-matter:end -->
