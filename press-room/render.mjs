@@ -804,6 +804,7 @@ const MASTHEAD = [
   { k: 'BUILDING', head: 'Product-minded', tail: 'software.', dek: 'Web, desktop and local-first workflows' },
 ];
 const STACK = ['React', 'TypeScript', 'Next.js', 'Node.js', 'Supabase', 'PostgreSQL', 'SQLite', 'Tauri', 'Rust', 'C++20', 'OpenGL'];
+const SHOW_STACK = false; // hidden for now; set true to bring back the "Set in" row
 const MOTTO = 'Structure first. Feel second. Polish all the way through launch.';
 const WIRE = [
   { slug: 'portfolio', k: 'THE ISSUE', title: 'Portfolio', dek: 'llbartolome-portfolio.vercel.app', href: SITE + '/' },
@@ -811,7 +812,8 @@ const WIRE = [
   { slug: 'email', k: 'LETTERS', title: 'Email', dek: 'bartolomell0705@gmail.com', href: 'mailto:bartolomell0705@gmail.com' },
 ];
 
-const MW = 1000, MH = 352;
+const MW = 1000, MH = SHOW_STACK ? 352 : 296;
+const stackLine = SHOW_STACK ? '. Set in: ' + STACK.join(', ') : '';
 
 async function masthead(edition) {
   const T = EDITIONS[edition];
@@ -826,7 +828,7 @@ async function masthead(edition) {
   const stack = STACK.map((t, i) => (i ? '<tspan class="it" dx="9">·</tspan><tspan dx="9">' : '<tspan>') + esc(t) + '</tspan>').join('');
   const svg = '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ' + MW + ' ' + MH + '" width="' + MW + '" height="' + MH + '" role="img" aria-labelledby="mt md">' +
     '<title id="mt">The masthead: who makes Issue 01</title>' +
-    '<desc id="md">' + esc(MASTHEAD.map((c) => c.k + ': ' + c.head + ' ' + c.tail + ' ' + c.dek).join('. ') + '. Set in: ' + STACK.join(', ') + '. ' + MOTTO) + '</desc>' +
+    '<desc id="md">' + esc(MASTHEAD.map((c) => c.k + ': ' + c.head + ' ' + c.tail + ' ' + c.dek).join('. ') + stackLine + '. ' + MOTTO) + '</desc>' +
     defs(T) +
     '<rect class="bg" width="' + MW + '" height="' + MH + '"/>' +
     '<g class="grain"><rect width="' + MW + '" height="' + MH + '" fill="url(#grain)"/></g>' +
@@ -836,10 +838,10 @@ async function masthead(edition) {
     '<line class="rule" x1="40" y1="56" x2="960" y2="56"/>' +
     MASTHEAD.map(col).join('') +
     '<line class="rule" x1="40" y1="224" x2="960" y2="224"/><line class="rule" x1="40" y1="228" x2="960" y2="228"/>' +
-    '<text class="kicker" x="40" y="262">SET IN</text>' +
-    '<text class="dek" x="118" y="262" style="font-size:14px;fill:' + T.ink + '">' + stack + '</text>' +
-    '<line class="rule--soft" x1="40" y1="284" x2="960" y2="284"/>' +
-    '<text class="title" x="500" y="320" text-anchor="middle" style="font-size:19px;letter-spacing:0;font-style:italic;fill:' + T.inkSoft + '">' + esc(MOTTO) + '</text>' +
+    (SHOW_STACK ? '<text class="kicker" x="40" y="262">SET IN</text>' +
+      '<text class="dek" x="118" y="262" style="font-size:14px;fill:' + T.ink + '">' + stack + '</text>' +
+      '<line class="rule--soft" x1="40" y1="284" x2="960" y2="284"/>' : '') +
+    '<text class="title" x="500" y="' + (SHOW_STACK ? 320 : 266) + '" text-anchor="middle" style="font-size:19px;letter-spacing:0;font-style:italic;fill:' + T.inkSoft + '">' + esc(MOTTO) + '</text>' +
     '</svg>';
   return embedFonts(svg);
 }
@@ -888,7 +890,7 @@ ${MARK[1]}`;
 const BACK = ['<!-- back-matter:start -->', '<!-- back-matter:end -->'];
 const backBlock = `${BACK[0]}
 <p align="center">
-  ${picture('masthead', 'The masthead. ' + MASTHEAD.map((c) => c.k[0] + c.k.slice(1).toLowerCase() + ': ' + c.head + ' ' + c.tail + ' ' + c.dek).join('. ') + '. Set in ' + STACK.join(', ') + '. ' + MOTTO, '100%')}
+  ${picture('masthead', 'The masthead. ' + MASTHEAD.map((c) => c.k[0] + c.k.slice(1).toLowerCase() + ': ' + c.head + ' ' + c.tail + ' ' + c.dek).join('. ') + stackLine + '. ' + MOTTO, '100%')}
 </p>
 
 <p align="center">

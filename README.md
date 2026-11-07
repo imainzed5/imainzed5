@@ -17,7 +17,7 @@
 <!-- The block between the back-matter markers is drawn from MASTHEAD, STACK, MOTTO and WIRE in press-room/render.mjs. -->
 <!-- back-matter:start -->
 <p align="center">
-  <picture><source media="(prefers-color-scheme: dark)" srcset="./assets/press-room/masthead-dark.svg"><img alt="The masthead. Now: Software Development Intern. Alpha Premier Realty · since October 2026. Studying: BS Information Technology. Fourth year · graduating in 2027. Building: Product-minded software. Web, desktop and local-first workflows. Set in React, TypeScript, Next.js, Node.js, Supabase, PostgreSQL, SQLite, Tauri, Rust, C++20, OpenGL. Structure first. Feel second. Polish all the way through launch." src="./assets/press-room/masthead-light.svg" width="100%"></picture>
+  <picture><source media="(prefers-color-scheme: dark)" srcset="./assets/press-room/masthead-dark.svg"><img alt="The masthead. Now: Software Development Intern. Alpha Premier Realty · since October 2026. Studying: BS Information Technology. Fourth year · graduating in 2027. Building: Product-minded software. Web, desktop and local-first workflows. Structure first. Feel second. Polish all the way through launch." src="./assets/press-room/masthead-light.svg" width="100%"></picture>
 </p>
 
 <p align="center">
