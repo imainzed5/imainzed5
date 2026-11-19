@@ -34,7 +34,7 @@
   .pl-rail{stroke:#d9885c;stroke-width:1.2;opacity:.6} .pl-skirt{stroke:#0b0705;stroke-width:2.4;opacity:.5}
   .pl-rug{fill:#3a2a1d;stroke:#0b0705;stroke-width:1} .pl-rug-edge{fill:none;stroke:#d9885c;stroke-width:1;stroke-dasharray:2 4;opacity:.8}
   .pl-office{fill:#241b13}
-  .glass{fill:#f2c9a4;fill-opacity:.3;stroke:#0b0705;stroke-width:1.2}
+  .glass{fill:#f7ead2;fill-opacity:.3;stroke:#0b0705;stroke-width:1.2}
   .pl-mull{stroke:#0b0705;stroke-width:1.2}
   .pl-door{fill:#d9885c;fill-opacity:.18;stroke:#d9885c;stroke-width:2}
   .pl-door.is-solid{fill:#4a3221;fill-opacity:1;stroke:#0b0705;stroke-width:1.2}
@@ -57,7 +57,7 @@
   .pl-sky{fill:url(#sky);stroke:#0b0705;stroke-width:1}
   .pl-cloud{fill:none;stroke:#fff;stroke-width:2.4;opacity:.8}
   .pl-moon,.pl-star{fill:#efe2c3}
-  .pl-skyline{fill:#8d7268} .pl-lit{fill:#e5a55e}
+  .pl-skyline{fill:#b3a18c} .pl-lit{fill:#e5a55e}
   .pl-mullion{stroke:#4a3221;stroke-width:2.4} .pl-sill{fill:#6b4f35;stroke:#0b0705;stroke-width:1}
   .pl-clock{fill:#e9dfcf;stroke:#0b0705;stroke-width:1.6}
   .pl-tick{stroke:#2a1d13;stroke-width:1} .pl-hand{stroke:#2a1d13;stroke-width:2} .pl-hand.is-min{stroke:#a0522d;stroke-width:1.4} .pl-pivot{fill:#2a1d13}
@@ -116,4 +116,4 @@
   @keyframes flicker{0%,100%{opacity:0.8}50%{opacity:0.64}}
   @keyframes live{50%{opacity:.25}}
   @media (prefers-reduced-motion:reduce){*{animation:none!important}}
-  </style><pattern id="pr-cut" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><rect width="7" height="7" class="cut-bg"/><line x1="0" y1="0" x2="0" y2="7" class="cut-line"/></pattern><pattern id="grain" width="14" height="14" patternUnits="userSpaceOnUse" patternTransform="rotate(28)"><line x1="0" y1="0" x2="0" y2="14"/></pattern><radialGradient id="glow"><stop offset="0" stop-color="#ffd18a" stop-opacity="1"/><stop offset=".55" stop-color="#ffb867" stop-opacity=".45"/><stop offset="1" stop-color="#ffb867" stop-opacity="0"/></radialGradient><linearGradient id="sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#c9b2b0"/><stop offset="1" stop-color="#f2c9a4"/></linearGradient></defs><rect class="bg" width="320" height="96"/><g class="grain"><rect width="320" height="96" fill="url(#grain)"/></g><path class="crop" d="M8 17V8H17 M303 8H312V17 M8 79V88H17 M303 88H312V79"/><line class="rule" x1="22" y1="20" x2="298" y2="20"/><text class="kicker" x="22" y="40" style="font-size:9.5px">LETTERS</text><text class="title" x="20" y="68" style="font-size:26px;letter-spacing:-.4px">Email</text><text class="small" x="22" y="84" style="font-size:10.5px">bartolomell0705@gmail.com</text><path d="M276 58 L292 42 M280 42 H292 V54" fill="none" stroke="#d9885c" stroke-width="1.6"/></svg>
+  </style><pattern id="pr-cut" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><rect width="7" height="7" class="cut-bg"/><line x1="0" y1="0" x2="0" y2="7" class="cut-line"/></pattern><pattern id="grain" width="14" height="14" patternUnits="userSpaceOnUse" patternTransform="rotate(28)"><line x1="0" y1="0" x2="0" y2="14"/></pattern><radialGradient id="glow"><stop offset="0" stop-color="#ffd18a" stop-opacity="1"/><stop offset=".55" stop-color="#ffb867" stop-opacity=".45"/><stop offset="1" stop-color="#ffb867" stop-opacity="0"/></radialGradient><linearGradient id="sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#efe3cc"/><stop offset="1" stop-color="#f7ead2"/></linearGradient></defs><rect class="bg" width="320" height="96"/><g class="grain"><rect width="320" height="96" fill="url(#grain)"/></g><path class="crop" d="M8 17V8H17 M303 8H312V17 M8 79V88H17 M303 88H312V79"/><line class="rule" x1="22" y1="20" x2="298" y2="20"/><text class="kicker" x="22" y="40" style="font-size:9.5px">LETTERS</text><text class="title" x="20" y="68" style="font-size:26px;letter-spacing:-.4px">Email</text><text class="small" x="22" y="84" style="font-size:10.5px">bartolomell0705@gmail.com</text><path d="M276 58 L292 42 M280 42 H292 V54" fill="none" stroke="#d9885c" stroke-width="1.6"/></svg>
